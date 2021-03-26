@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block content %}
+<style>
+h2 {text-align: center;}
+p {text-align: center;}
+
+</style>
+<h2>Classification</h2>
+
+<div>
+    <form align="center" enctype="multipart/form-data" id="upload-file" method="post">
+        <label class="upload-label" for="imageUpload">
+            Select
+        </label>
+        <input accept=".png, .jpg, .jpeg" id="imageUpload" name="file" type="file">
+    </form>
+
+    <div align="center" class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-primary btn-lg " id="btn-predict" type="button">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 align="center" id="result">
+        <span> </span>
+    </h3>
+
+</div>
+
+{% endblock %}
