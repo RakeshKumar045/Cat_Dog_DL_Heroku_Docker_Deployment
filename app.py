@@ -12,6 +12,10 @@ from keras.models import load_model
 from keras.preprocessing import image
 from werkzeug.utils import secure_filename
 
+# from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
+# from tensorflow.keras.models import load_model
+# from tensorflow.keras.preprocessing import image
+
 # Define a flask app
 app = Flask(__name__)
 
